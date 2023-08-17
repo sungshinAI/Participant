@@ -9,13 +9,12 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="0dp"
-        android:layout_height="373dp"
-        android:layout_marginTop="408dp"
+        android:layout_width="413dp"
+        android:layout_height="433dp"
+        android:layout_marginTop="60dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location"
         app:srcCompat="@drawable/buttonround_w" />
 
     <ImageButton
@@ -23,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="15dp"
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,27 +32,23 @@
         android:id="@+id/home3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="25dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginEnd="88dp"
         android:layout_marginBottom="16dp"
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/home4"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/home2"
+        app:layout_constraintEnd_toEndOf="@+id/btnhome1_2"
+        app:layout_constraintStart_toStartOf="@+id/location"
         app:srcCompat="@drawable/home3" />
 
     <ImageButton
         android:id="@+id/home2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="95dp"
+        android:layout_marginStart="131dp"
         android:layout_marginBottom="16dp"
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/home3"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/home1"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/home2" />
 
@@ -61,43 +56,29 @@
         android:id="@+id/home1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="45dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="15dp"
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/home2"
-        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/home1" />
 
-    <Button
-        android:id="@+id/btnhome1_2"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginEnd="45dp"
-        android:background="@drawable/buttonround"
-        android:text="초대 링크"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+
+    <ImageView
+        android:id="@+id/location"
+        android:layout_width="111dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.493" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/location" />
 
     <Button
         android:id="@+id/btnhome1_1"
-        android:layout_width="0dp"
+        android:layout_width="300dp"
         android:layout_height="45dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="84dp"
-        android:layout_marginEnd="45dp"
-        android:layout_marginBottom="83dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/buttonround"
         android:text="약속 만들기"
         android:textAlignment="center"
@@ -105,26 +86,32 @@
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/btnhome1_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView4" />
 
-    <ImageView
-        android:id="@+id/location"
-        android:layout_width="111dp"
-        android:layout_height="143dp"
-        android:layout_marginBottom="75dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+    <Button
+        android:id="@+id/btnhome1_2"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/buttonround"
+        android:text="초대 링크"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/location" />
+        app:layout_constraintTop_toBottomOf="@+id/btnhome1_1" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="74dp"
+        android:layout_marginTop="50dp"
         android:text="We Meet Here!"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/white"

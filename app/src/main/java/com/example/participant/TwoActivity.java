@@ -8,20 +8,20 @@ import android.view.View;
 import android.widget.Button;
 
 public class TwoActivity extends AppCompatActivity {
-    private Button btn10_1; // 가능
-    private Button btn10_2; // 불가능
-    private Button btn10_3; // 다음
+    private Button btn2_1; // 가능
+    private Button btn2_2; // 불가능
+    private Button btn2_3; // 다음
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.two);
 
-        btn10_1=findViewById(R.id.btn10_1);
-        btn10_2=findViewById(R.id.btn10_2);
-        btn10_3=findViewById(R.id.btn10_3);
+        btn2_1=findViewById(R.id.btn2_1);
+        btn2_2=findViewById(R.id.btn2_2);
+        btn2_3=findViewById(R.id.btn2_3);
 
-        btn10_3.setOnClickListener(new View.OnClickListener() {
+        btn2_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 

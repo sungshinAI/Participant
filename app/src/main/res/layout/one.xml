@@ -1,17 +1,41 @@
+
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OneActivity">
+    android:background="#1463fc"
+    tools:context=".Home1Activity">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="410dp"
+        android:layout_height="495dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location"
+        app:srcCompat="@drawable/buttonround_w" />
+
+    <ImageView
+        android:id="@+id/location"
+        android:layout_width="111dp"
+        android:layout_height="143dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/location"
+        tools:layout_editor_absoluteY="88dp" />
 
     <TextView
         android:id="@+id/tv1_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="368dp"
         android:text="링크를 넣어주세요"
         android:textColor="@color/black"
         android:textSize="25sp"
@@ -37,14 +61,14 @@
 
     <EditText
         android:id="@+id/ett1_1"
-        android:layout_width="280dp"
-        android:layout_height="40dp"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
         android:ems="10"
         android:hint="링크를 넣어주세요"
         android:inputType="text"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="264dp" />
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="437dp" />
 
     <ImageButton
         android:id="@+id/back"
@@ -55,5 +79,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
