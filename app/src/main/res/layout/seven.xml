@@ -6,47 +6,62 @@
     android:layout_height="match_parent"
     tools:context=".SevenActivity">
 
+    <TextView
+        android:id="@+id/tv7_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="96dp"
+        android:text="실시간 확인"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/btn7_1"
         android:layout_width="320dp"
         android:layout_height="45dp"
+        android:layout_marginBottom="65dp"
         android:background="@drawable/buttonround"
-        android:backgroundTint="#1463fc"
+        android:backgroundTint="#651463FC"
         android:gravity="center"
         android:text="장소 투표"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="272dp" />
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn7_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn7_2"
         android:layout_width="320dp"
         android:layout_height="45dp"
         android:background="@drawable/buttonround"
-        android:backgroundTint="#1463fc"
+        android:backgroundTint="#651463FC"
         android:gravity="center"
         android:text="실시간 참여 현황"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="388dp" />
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="343dp" />
 
     <Button
         android:id="@+id/btn7_3"
         android:layout_width="320dp"
         android:layout_height="45dp"
+        android:layout_marginTop="65dp"
         android:background="@drawable/buttonround"
-        android:backgroundTint="#1463fc"
+        android:backgroundTint="#651463FC"
         android:gravity="center"
-        android:text="우선수위 결과"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="519dp" />
+        android:text="우선순위 결과"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn7_2" />
 
     <ImageButton
         android:id="@+id/home1"

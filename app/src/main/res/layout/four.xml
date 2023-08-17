@@ -1,25 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".FourActivity">
 
     <TextView
+        android:id="@+id/tv4_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginStart="24dp"
+        android:text="2/3"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="59dp" />
+
+    <TextView
+        android:id="@+id/tv1_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="96dp"
         android:text="선택한 날짜와 시간"
         android:textColor="@color/black"
-        android:textSize="18sp"
-        android:layout_marginBottom="16dp"/>
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
         android:id="@+id/listViewAppointments"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="388dp"
+        android:layout_height="443dp"
         android:divider="@android:color/darker_gray"
-        android:dividerHeight="1dp"/>
+        android:dividerHeight="1dp"
+        tools:layout_editor_absoluteX="-7dp"
+        tools:layout_editor_absoluteY="145dp" />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/btn10_3"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/buttonround"
+        android:backgroundTint="#1463fc"
+        android:gravity="center"
+        android:text="장소 등록하러 가기"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

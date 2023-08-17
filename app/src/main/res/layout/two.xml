@@ -11,14 +11,15 @@
         android:id="@+id/tv10_1"
         android:layout_width="246dp"
         android:layout_height="50dp"
+        android:layout_marginTop="96dp"
         android:autoSizeTextType="uniform"
         android:gravity="center"
         android:text="We Meet Here 회의"
         android:textColor="#000000"
         android:textSize="25sp"
         android:textStyle="bold|italic"
-        tools:layout_editor_absoluteX="83dp"
-        tools:layout_editor_absoluteY="96dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="83dp" />
 
     <Button
         android:id="@+id/btn10_1"
@@ -37,6 +38,7 @@
         android:id="@+id/btn10_3"
         android:layout_width="320dp"
         android:layout_height="45dp"
+        android:layout_marginBottom="50dp"
         android:background="@drawable/buttonround"
         android:backgroundTint="#1463fc"
         android:gravity="center"
@@ -44,8 +46,9 @@
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="640dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn10_2"

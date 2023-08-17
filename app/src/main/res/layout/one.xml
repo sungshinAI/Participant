@@ -7,19 +7,23 @@
     tools:context=".OneActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv1_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="제공받은 링크 넣고\n다음 화면으로 intent 버튼 넣기"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="96dp"
+        android:text="링크를 넣어주세요"
         android:textColor="@color/black"
         android:textSize="25sp"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="329dp" />
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn1_1"
         android:layout_width="320dp"
         android:layout_height="45dp"
+        android:layout_marginBottom="50dp"
         android:background="@drawable/buttonround"
         android:backgroundTint="#1463fc"
         android:gravity="center"
@@ -27,7 +31,29 @@
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="640dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/ett1_1"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="링크를 넣어주세요"
+        android:inputType="text"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="264dp" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

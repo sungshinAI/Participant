@@ -18,11 +18,12 @@
 
     <Button
         android:id="@+id/voteButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
         android:background="@drawable/buttonround"
+        android:gravity="center"
         android:text="투표"
         android:textColor="#FFFFFF"
-        android:textSize="16sp"/>
+        android:textSize="16sp" />
 
 </LinearLayout>
