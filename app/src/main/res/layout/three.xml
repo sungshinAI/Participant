@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ThreeActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="날짜와 시간을 선택해주세요"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="64dp" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:spinnersShown="true"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="124dp" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="363dp" />
+
+    <Button
+        android:id="@+id/buttonAddDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:background="@drawable/buttonround"
+        android:text="추가"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="631dp" />
+
+    <Button
+        android:id="@+id/buttonCreateAppointment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/buttonround"
+        android:text="저장"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="256dp"
+        tools:layout_editor_absoluteY="634dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
