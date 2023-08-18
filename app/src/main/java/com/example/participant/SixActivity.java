@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class SixActivity extends AppCompatActivity {
 
-    private Button btn6_1;
+    private Button btn6_1; // Home 화면으로 이동 Button
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

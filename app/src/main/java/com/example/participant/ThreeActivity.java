@@ -1,5 +1,6 @@
 package com.example.participant;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,8 +25,8 @@ public class ThreeActivity extends AppCompatActivity {
 
     private DatePicker datePicker;
     private TimePicker timePicker;
-    private Button addDateTimeButton;
-    private Button createAppointmentButton;
+    private Button addDateTimeButton; // 추가 버튼
+    private Button createAppointmentButton; // 저장 버튼
     private FirebaseAuth mAuth;
 
     private List<Date> selectedDateTimes = new ArrayList<>();
@@ -54,6 +55,7 @@ public class ThreeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 createAppointments();
             }
+
         });
     }
 
@@ -94,6 +96,10 @@ public class ThreeActivity extends AppCompatActivity {
                         }
                     });
         }
+
+        // 선택한 날짜와 시간을 보는 Activity로 전환
+        Intent intent = new Intent(ThreeActivity.this, FourActivity.class);
+        startActivity(intent);
     }
 
     // 현재 로그인한 사용자의 표시 이름 가져오기

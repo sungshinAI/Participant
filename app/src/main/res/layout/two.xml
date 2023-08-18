@@ -18,21 +18,24 @@
         android:textColor="#000000"
         android:textSize="25sp"
         android:textStyle="bold|italic"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="83dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn2_1"
         android:layout_width="281dp"
         android:layout_height="42dp"
+        android:layout_marginTop="270dp"
         android:background="@drawable/buttonround"
         android:backgroundTint="#651463FC"
         android:gravity="center"
         android:text="가능"
         android:textColor="#000000"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="279dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn2_3"
@@ -54,13 +57,15 @@
         android:id="@+id/btn2_2"
         android:layout_width="281dp"
         android:layout_height="42dp"
+        android:layout_marginTop="70dp"
         android:background="@drawable/buttonround"
         android:backgroundTint="#D9D9D9"
         android:gravity="center"
         android:text="불가능"
         android:textColor="#000000"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="416dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn2_1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

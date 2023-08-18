@@ -13,8 +13,10 @@
         android:text="일정 등록이 완료되었습니다"
         android:textColor="@color/black"
         android:textSize="25sp"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="347dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn6_1"
