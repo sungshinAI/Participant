@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="장소 투표"
+        android:text="장소 등록"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -36,11 +36,9 @@
         android:id="@+id/placeNameEditText"
         android:layout_width="320dp"
         android:layout_height="45dp"
-        android:layout_marginTop="60dp"
-        android:hint="장소 이름을 입력하세요"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv5_2" />
+        android:hint=" 장소 이름을 입력하세요"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="401dp" />
 
     <Button
         android:id="@+id/registerButton"
@@ -56,6 +54,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:background="@drawable/buttonround"
+        android:backgroundTint="#D9D9D9"
+        android:hint="장소 이름을 입력하세요"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="252dp" />
+
     <ImageButton
         android:id="@+id/imageButton3"
         android:layout_width="40dp"
@@ -66,5 +74,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="704dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
