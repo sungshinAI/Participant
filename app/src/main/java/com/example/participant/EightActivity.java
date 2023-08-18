@@ -1,5 +1,6 @@
 package com.example.participant;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,6 +30,7 @@ public class EightActivity extends AppCompatActivity {
 
     private RadioGroup placeRadioGroup;
     private Button voteButton;
+    private Button btn8_2;
 
     private List<String> placeNames = new ArrayList<>();
 
@@ -39,6 +41,7 @@ public class EightActivity extends AppCompatActivity {
 
         placeRadioGroup = findViewById(R.id.placeRadioGroup);
         voteButton = findViewById(R.id.voteButton);
+        btn8_2 = findViewById(R.id.btn8_2);
 
         loadPlaceNames();
 
@@ -52,6 +55,19 @@ public class EightActivity extends AppCompatActivity {
 
                     voteForPlace(selectedPlaceName);
                 }
+
+                // Home2 Activity로 전환
+                Intent intent = new Intent(EightActivity.this, SixActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btn8_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // 5. 장소 등록 Activity로 전환
+                Intent intent = new Intent(EightActivity.this, FiveActivity.class);
+                startActivity(intent);
             }
         });
     }

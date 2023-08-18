@@ -33,7 +33,6 @@
         <activity android:name=".NineActivity" />
         <activity android:name=".TenActivity" />
         <activity android:name=".ElevenActivity" />
-
     </application>
 
 </manifest>

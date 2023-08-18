@@ -34,7 +34,7 @@ public class FiveActivity extends AppCompatActivity {
                 }
 
                 // 일정 등록이 완료되었습니다 Activity로 전환
-                Intent intent = new Intent(FiveActivity.this, SixActivity.class);
+                Intent intent = new Intent(FiveActivity.this, EightActivity.class);
                 startActivity(intent);
             }
         });

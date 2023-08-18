@@ -46,8 +46,8 @@ public class FourActivity extends AppCompatActivity {
         btn10_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // 장소 투표 Activity로 전환
-                Intent intent = new Intent(FourActivity.this, FiveActivity.class);
+                // 8. 장소 투표 Activity로 전환
+                Intent intent = new Intent(FourActivity.this, EightActivity.class);
                 startActivity(intent);
             }
         });

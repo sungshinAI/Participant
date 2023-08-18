@@ -27,8 +27,8 @@ public class SevenActivity extends AppCompatActivity {
         btn7_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // 8. 장소투표 Activity로 전환
-                Intent intent = new Intent(SevenActivity.this, EightActivity.class);
+                // 9. 투표 결과 확인 Activity로 전환
+                Intent intent = new Intent(SevenActivity.this, NineActivity.class);
                 startActivity(intent);
             }
         });

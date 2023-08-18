@@ -50,7 +50,7 @@
         android:background="@drawable/buttonround"
         android:backgroundTint="#1463fc"
         android:gravity="center"
-        android:text="장소 등록하러 가기"
+        android:text="장소 투표 및 등록"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
