@@ -13,30 +13,32 @@
         android:id="@+id/tv10_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginStart="16dp"
         android:text="실시간 참여 현황"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
 
     <ListView
         android:id="@+id/listViewAppointments"
-        android:layout_width="388dp"
-        android:layout_height="443dp"
+        android:layout_width="380dp"
+        android:layout_height="622dp"
+        android:layout_marginTop="50dp"
         android:divider="@android:color/darker_gray"
         android:dividerHeight="1dp"
-        tools:layout_editor_absoluteX="-7dp"
-        tools:layout_editor_absoluteY="145dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv10_1" />
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back" />

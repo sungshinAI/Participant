@@ -9,39 +9,38 @@
     android:padding="16dp"
     tools:context=".FiveActivity">
 
+
     <TextView
         android:id="@+id/tv5_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_marginStart="24dp"
-        android:text="3/3"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="61dp" />
-
-    <TextView
-        android:id="@+id/tv1_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginStart="16dp"
         android:text="장소 투표"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+
+    <TextView
+        android:id="@+id/tv5_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="2/3"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv5_1" />
 
     <EditText
         android:id="@+id/placeNameEditText"
         android:layout_width="320dp"
         android:layout_height="45dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="60dp"
         android:hint="장소 이름을 입력하세요"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv1_1" />
+        app:layout_constraintTop_toBottomOf="@+id/tv5_2" />
 
     <Button
         android:id="@+id/registerButton"
@@ -62,7 +61,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:backgroundTint="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
