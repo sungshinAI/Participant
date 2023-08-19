@@ -27,6 +27,8 @@ public class SevenActivity extends AppCompatActivity {
         btn7_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 버튼 눌렀을 때 색깔 변하는 기능
+
                 // 9. 투표 결과 확인 Activity로 전환
                 Intent intent = new Intent(SevenActivity.this, NineActivity.class);
                 startActivity(intent);
@@ -37,6 +39,8 @@ public class SevenActivity extends AppCompatActivity {
         btn7_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 버튼 눌렀을 때 색깔 변하는 기능
+
                 // 10. 실시간 참여 현황 Activity로 전환
                 Intent intent = new Intent(SevenActivity.this, TenActivity.class);
                 startActivity(intent);
@@ -46,6 +50,8 @@ public class SevenActivity extends AppCompatActivity {
         btn7_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 버튼 눌렀을 때 색깔 변하는 기능
+
                 // 11. 우선순위 결과 Activity로 전환
                 Intent intent = new Intent(SevenActivity.this, ElevenActivity.class);
                 startActivity(intent);

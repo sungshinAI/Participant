@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homebutton2_1Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:gravity="center"
+        android:text="회원 정보 수정"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="100dp"
+        android:text="이름"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="5dp"
+        android:hint="이름을 작성하시오"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <Button
+        android:id="@+id/btn24_1"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/buttonround"
+        android:backgroundTint="#1463FC"
+        android:gravity="center"
+        android:text="저장"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/home3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/home4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/home4" />
+
+    <ImageButton
+        android:id="@+id/home3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/home2"
+        app:srcCompat="@drawable/home3" />
+
+    <ImageButton
+        android:id="@+id/home2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="131dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home2" />
+
+    <ImageButton
+        android:id="@+id/home1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home1" />
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="현재 비밀번호"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword3"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="새 비밀번호를 입력하시오"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="새 비밀번호"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        tools:hint="현재 비밀번호를 입력하시오" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="이메일"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="이메일을 작성하시오"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

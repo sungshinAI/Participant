@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -30,7 +31,7 @@ public class EightActivity extends AppCompatActivity {
 
     private RadioGroup placeRadioGroup;
     private Button voteButton;
-    private Button btn8_2;
+    private TextView btn8_2;
 
     private List<String> placeNames = new ArrayList<>();
 

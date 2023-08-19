@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homebutton3_1">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:text="Calendar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#1463fc"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/diaryTextView"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+    <EditText
+        android:id="@+id/contextEditText"
+        android:layout_width="320dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="내용을 입력하세요."
+        android:inputType="textMultiLine"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diaryTextView" />
+
+    <Button
+        android:id="@+id/del_Btn"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/buttonround"
+        android:backgroundTint="#1463fc"
+        android:text="삭제"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cha_Btn" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="320dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diaryTextView" />
+
+    <Button
+        android:id="@+id/save_Btn"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/buttonround"
+        android:backgroundTint="#1463fc"
+        android:text="저장"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/cha_Btn"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/buttonround"
+        android:backgroundTint="#1463fc"
+        android:text="수정"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/del_Btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/home4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/home4" />
+
+    <ImageButton
+        android:id="@+id/home3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/home4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/home2"
+        app:srcCompat="@drawable/home3" />
+
+    <ImageButton
+        android:id="@+id/home2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/home3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/home1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home2" />
+
+    <ImageButton
+        android:id="@+id/home1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/home2"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

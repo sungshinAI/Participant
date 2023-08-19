@@ -39,7 +39,6 @@ public class FiveActivity extends AppCompatActivity {
             }
         });
     }
-
     private void registerPlace(String placeName) {
         placesRef.child(placeName).child("votes").setValue(0L);
         finish(); // 액티비티 종료

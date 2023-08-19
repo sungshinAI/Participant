@@ -33,6 +33,10 @@
         <activity android:name=".NineActivity" />
         <activity android:name=".TenActivity" />
         <activity android:name=".ElevenActivity" />
+        <activity android:name=".homebutton2_1Activity" />
+        <activity android:name=".homebutton2_2Activity" />
+        <activity android:name=".homebutton3_1Activity" />
+
     </application>
 
 </manifest>

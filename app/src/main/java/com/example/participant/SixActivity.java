@@ -17,6 +17,7 @@ public class SixActivity extends AppCompatActivity {
         setContentView(R.layout.six);
 
         btn6_1 = findViewById(R.id.btn6_1);
+
         btn6_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

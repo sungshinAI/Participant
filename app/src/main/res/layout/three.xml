@@ -53,6 +53,8 @@
         android:background="@drawable/buttonround"
         android:text="추가"
         android:textColor="#FFFFFF"
+        android:backgroundTint="#1463fc"
+        android:textStyle="bold"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -66,7 +68,9 @@
         android:layout_marginBottom="50dp"
         android:background="@drawable/buttonround"
         android:text="저장"
+        android:backgroundTint="#1463fc"
         android:textColor="#FFFFFF"
+        android:textStyle="bold"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
