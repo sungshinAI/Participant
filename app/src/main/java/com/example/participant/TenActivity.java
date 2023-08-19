@@ -1,7 +1,10 @@
 package com.example.participant;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,6 +25,7 @@ public class TenActivity extends AppCompatActivity {
     private ArrayAdapter<String> adapter;
     private List<String> appointmentList;
     private FirebaseAuth mAuth;
+    private ImageButton back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +43,16 @@ public class TenActivity extends AppCompatActivity {
 
         // Firestore에서 약속 정보 조회
         fetchAppointments();
+
+        back = findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // 실시간 확인 seven Activity로 전환
+                Intent intent = new Intent(TenActivity.this, SevenActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void fetchAppointments() {

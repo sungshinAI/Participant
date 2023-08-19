@@ -6,8 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".ElevenActivity">
 
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv11_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
@@ -19,49 +30,38 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btn11_1"
-        android:layout_width="281dp"
-        android:layout_height="42dp"
-        android:layout_marginBottom="70dp"
-        android:background="@drawable/buttonround"
-        android:backgroundTint="#D9D9D9"
-        android:gravity="center"
-        android:text="1. 5월 20일 14시~22시"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn11_2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btn11_2"
-        android:layout_width="281dp"
-        android:layout_height="42dp"
-        android:background="@drawable/buttonround"
-        android:backgroundTint="#D9D9D9"
-        android:gravity="center"
-        android:text="2. 5월 21일 13시~23시"
-        android:textColor="#000000"
-        android:textSize="16sp"
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="344dp" />
+        app:layout_constraintTop_toBottomOf="@+id/tv11_1">
 
-    <Button
-        android:id="@+id/btn11_3"
-        android:layout_width="281dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="70dp"
-        android:background="@drawable/buttonround"
-        android:backgroundTint="#D9D9D9"
-        android:gravity="center"
-        android:text="3. 5월 19일 18시~24시"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn11_2" />
+        <RadioButton
+            android:id="@+id/rb_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="참여인원 많은 순" />
+
+        <RadioButton
+            android:id="@+id/rb_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="오래 만나는 순" />
+
+        <RadioButton
+            android:id="@+id/rb_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="빨리 만나는 순" />
+
+    </RadioGroup>
 
     <ImageButton
         android:id="@+id/home4"
@@ -115,5 +115,17 @@
         app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/home1" />
+
+    <LinearLayout
+        android:id="@+id/resultsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio_group">
+        <!-- 투표 결과가 런타임에 추가됨 -->
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

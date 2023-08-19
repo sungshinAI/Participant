@@ -1,7 +1,9 @@
 package com.example.participant;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -21,6 +23,7 @@ public class NineActivity extends AppCompatActivity {
     private DatabaseReference placesRef = FirebaseDatabase.getInstance().getReference("places");
 
     private List<Place> placeList = new ArrayList<>();
+    private ImageButton back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +31,16 @@ public class NineActivity extends AppCompatActivity {
         setContentView(R.layout.nine);
 
         loadPlaces();
+
+        back = findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // 실시간 확인 seven Activity로 전환
+                Intent intent = new Intent(NineActivity.this, SevenActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void loadPlaces() {
