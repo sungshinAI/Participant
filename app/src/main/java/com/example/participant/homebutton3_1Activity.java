@@ -4,11 +4,13 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CalendarView;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -29,6 +31,8 @@ public class homebutton3_1Activity extends AppCompatActivity {
     private FirebaseAuth mAuth; // Declare FirebaseAuth instance
     private FirebaseUser currentUser; // Declare FirebaseUser instance
 
+    private ImageButton home4;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +49,7 @@ public class homebutton3_1Activity extends AppCompatActivity {
         textView2 = findViewById(R.id.textView2);
         textView3 = findViewById(R.id.textView3);
         contextEditText = findViewById(R.id.contextEditText);
+        home4 = findViewById(R.id.home4);
 
         if (currentUser != null) {
             String name = currentUser.getDisplayName();
@@ -90,6 +95,14 @@ public class homebutton3_1Activity extends AppCompatActivity {
                 contextEditText.setVisibility(View.INVISIBLE);
                 textView2.setVisibility(View.VISIBLE);
 
+            }
+        });
+
+        home4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(homebutton3_1Activity.this, homebutton2_1Activity.class);
+                startActivity(intent);
             }
         });
     }
